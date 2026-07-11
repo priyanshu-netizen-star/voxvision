@@ -1,0 +1,116 @@
+/* ============================================================
+   VOXVISION — Responsive Styles
+   ============================================================ */
+
+/* ── Large Desktop ──────────────────────────────────────────── */
+@media (max-width: 1400px) {
+  :root { --container: 1100px; }
+}
+
+/* ── Desktop / Laptop ───────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .industries-grid { grid-template-columns: repeat(4, 1fr); }
+  .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; }
+  .footer-grid .footer-col:last-child { grid-column: 1 / -1; }
+  .why-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* ── Tablet ─────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  :root { --section-padding: 80px; }
+
+  .nav-links { display: none; }
+  .nav-cta .btn { display: none; }
+  .hamburger { display: flex; }
+  .hamburger span { background: rgba(255,255,255,0.85); }
+
+  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .industry-features-grid { grid-template-columns: repeat(2, 1fr); }
+  .social-services-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-plans.active { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+}
+
+/* ── Mobile Large ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --section-padding: 60px; --nav-height: 64px; }
+
+  .hero-title { font-size: clamp(36px, 8vw, 56px); }
+  .hero-buttons { flex-direction: column; align-items: flex-start; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+
+  .industries-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .services-tabs { gap: 6px; }
+  .tab-btn { padding: 8px 14px; font-size: 13px; }
+
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .portfolio-filters { gap: 6px; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 28px 20px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: 1; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
+
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .cta-buttons .btn { width: 100%; max-width: 320px; justify-content: center; }
+
+  .section-title { font-size: clamp(28px, 6vw, 44px); }
+  .section-subtitle { font-size: 15px; }
+
+  .social-services-grid { grid-template-columns: repeat(2, 1fr); }
+  .industry-features-grid { grid-template-columns: 1fr; }
+
+  .hero-stats { gap: 8px; }
+  .hero-stat { font-size: 12px; padding: 8px 12px; }
+
+  .stat-number { font-size: 36px; }
+  .stat-item { padding: 28px 16px; }
+
+  .whatsapp-fab { bottom: 20px; right: 20px; width: 52px; height: 52px; }
+  .whatsapp-icon { width: 24px; height: 24px; }
+}
+
+/* ── Mobile Small ───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  :root { --section-padding: 48px; }
+
+  .nav-logo .logo-text { font-size: 18px; }
+  .industries-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .industry-card { padding: 20px 16px; }
+  .industry-icon { font-size: 28px; }
+  .industry-name { font-size: 14px; }
+
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-row { grid-template-columns: 1fr; }
+
+  .pricing-card { padding: 28px 20px; }
+  .pricing-amount { font-size: 44px; }
+
+  .hero-badge { font-size: 11px; }
+  .testimonial-card { padding: 24px 20px; }
+}
+
+/* ── Animations Reduced Motion ──────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .fade-up, .fade-in, .slide-left, .slide-right, .scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
