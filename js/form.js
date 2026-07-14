@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    VOXVISION â€” Contact Form Handling
    ============================================================ */
 
@@ -80,7 +80,7 @@
     });
   });
 
-  // Form submit â€” send to WhatsApp / mailto
+  // Form submit — send to email via FormSubmit.co
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -97,18 +97,31 @@
     const email    = form.querySelector('#field-email').value.trim();
     const message  = form.querySelector('#field-message').value.trim();
 
-    // Build WhatsApp message
-    const wa = encodeURIComponent(
-      `Hello VOXVISION! ðŸ‘‹\n\n` +
-      `*Name:* ${name}\n` +
-      `*Business:* ${biz}\n` +
-      `*Industry:* ${industry}\n` +
-      `*Phone:* ${phone}\n` +
-      `*Email:* ${email}\n\n` +
-      `*Message:* ${message}`
-    );
-
-    setTimeout(() => {
+    fetch("https://formsubmit.co/ajax/voxvision6@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        _subject: "New Free Consultation Request — VOXVISION",
+        Name: name,
+        Business: biz,
+        Industry: industry,
+        Phone: phone,
+        Email: email,
+        _replyto: email,
+        Message: message
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Failed to send email");
+      }
+    })
+    .then(data => {
       // Show success
       if (successMsg) {
         successMsg.style.display = 'flex';
@@ -118,26 +131,39 @@
           border-radius: 12px; padding: 16px 20px;
           color: #4ADE80; font-size: 14px; margin-top: 16px;
         `;
-        successMsg.innerHTML = `<span style="font-size:20px;">âœ…</span> <span>Thank you! We'll contact you within 24 hours.</span>`;
+        successMsg.innerHTML = `<span style="font-size:20px;">✅</span> <span>Thank you! We've received your request and will contact you within 24 hours.</span>`;
       }
+      if (errorMsg) errorMsg.innerHTML = '';
 
       form.reset();
 
       // Reset button
       submitBtn.disabled = false;
-      submitBtn.innerHTML = `Request Free Consultation <span class="btn-arrow">â†’</span>`;
-
-      // Open WhatsApp in new tab after 500ms
-      setTimeout(() => {
-        window.open(`https://wa.me/917975882681?text=${wa}`, '_blank');
-      }, 500);
+      submitBtn.innerHTML = `Request Free Consultation <span class="btn-arrow">→</span>`;
 
       // Hide success msg after 6s
       setTimeout(() => {
         if (successMsg) successMsg.innerHTML = '';
       }, 6000);
+    })
+    .catch(error => {
+      console.error(error);
+      if (errorMsg) {
+        errorMsg.style.display = 'flex';
+        errorMsg.style.cssText = `
+          display: flex; align-items: center; gap: 12px;
+          background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3);
+          border-radius: 12px; padding: 16px 20px;
+          color: #F87171; font-size: 14px; margin-top: 16px;
+        `;
+        errorMsg.innerHTML = `<span style="font-size:20px;">❌</span> <span>Error sending request. Please check connection or contact us via WhatsApp.</span>`;
+      }
+      if (successMsg) successMsg.innerHTML = '';
 
-    }, 1200);
+      // Reset button
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = `Request Free Consultation <span class="btn-arrow">→</span>`;
+    });
   });
 
 })();
