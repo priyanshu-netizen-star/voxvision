@@ -81,7 +81,7 @@
   });
 
   // Web3Forms Access Key (Get yours free at web3forms.com)
-  const ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+  const ACCESS_KEY = "b39420f9-47f8-4ad3-a93d-9b87721c8f2c";
 
   // Form submit — send to email via Web3Forms AJAX
   form.addEventListener('submit', function (e) {
