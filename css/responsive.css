@@ -1,0 +1,42 @@
+/* ============================================================
+   VOXVISION — Responsive CSS
+   (extra breakpoints & overrides)
+   ============================================================ */
+
+/* ── 1440px+ ────────────────────────────────────────────────── */
+@media (min-width: 1440px) {
+  :root { --container: 1360px; }
+  .hero-title { font-size: 96px; }
+  .industries-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ── Print ──────────────────────────────────────────────────── */
+@media print {
+  .navbar, .whatsapp-fab, .cursor-dot, .cursor-ring, .loading-screen { display: none !important; }
+  body { background: white; color: black; }
+  .section { padding: 40px 0; }
+}
+
+/* ── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .cursor-dot, .cursor-ring { display: none; }
+  body { cursor: auto; }
+}
+
+/* ── High contrast ──────────────────────────────────────────── */
+@media (forced-colors: active) {
+  .text-gradient,
+  .text-gradient-cyber,
+  .text-shimmer {
+    -webkit-text-fill-color: CanvasText;
+    background: none;
+    color: CanvasText;
+  }
+}

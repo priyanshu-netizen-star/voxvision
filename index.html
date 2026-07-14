@@ -1,0 +1,1537 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VOXVISION — We Build Brands That Dominate Digital</title>
+  <meta name="description" content="VOXVISION is a premium digital agency offering website development, social media management, SEO, branding, AI chatbots, and business automation for local businesses in Bengaluru." />
+  <meta name="keywords" content="digital agency Bengaluru, website development, social media management, SEO, Google Ads, Meta Ads, branding, AI chatbot, CRM integration" />
+  <meta property="og:title" content="VOXVISION — Premium Digital Agency" />
+  <meta property="og:description" content="We Build Businesses That Dominate Online. Premium websites, social media, SEO & digital marketing." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://voxvision.in/" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- JSON-LD Schema Markup for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "VOXVISION",
+    "image": "https://voxvision.in/images/hero_dark_visual.png",
+    "@id": "https://voxvision.in/#website",
+    "url": "https://voxvision.in/",
+    "telephone": "+917975882681",
+    "priceRange": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "AECS Layout",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560037",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 12.9698,
+      "longitude": 77.7123
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://facebook.com",
+      "https://instagram.com/Voxvi.sion",
+      "https://linkedin.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══════════════════════ LOADING SCREEN ══════════════════════ -->
+<div class="loading-screen" id="loading-screen" aria-hidden="true">
+  <div class="loading-logo">
+    <svg width="60" height="60" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lg-load" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#9b59ff"/>
+          <stop offset="50%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+      </defs>
+      <polygon points="40,4 62,22 74,10 74,42 40,76 6,42 6,10 18,22" fill="url(#lg-load)" opacity="0.12"/>
+      <polyline points="18,22 6,10 6,42" stroke="url(#lg-load)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <polyline points="62,22 74,10 74,42" stroke="url(#lg-load)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <polyline points="6,42 40,76 74,42" stroke="url(#lg-load)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="40" cy="38" r="10" stroke="url(#lg-load)" stroke-width="2.5" fill="none"/>
+      <circle cx="40" cy="38" r="4" fill="url(#lg-load)"/>
+    </svg>
+    <div class="loading-logo-text">VOXVISION</div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ CUSTOM CURSOR ══════════════════════ -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ══════════════════════════ NAVBAR ═════════════════════════ -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="VOXVISION Home">
+      <svg class="logo-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9b59ff"/>
+            <stop offset="50%" stop-color="#22d3ee"/>
+            <stop offset="100%" stop-color="#7c3aed"/>
+          </linearGradient>
+        </defs>
+        <polygon points="40,4 62,22 74,10 74,42 40,76 6,42 6,10 18,22" fill="url(#g1)" opacity="0.15"/>
+        <polyline points="18,22 6,10 6,42" stroke="url(#g1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <polyline points="62,22 74,10 74,42" stroke="url(#g1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <polyline points="6,42 40,76 74,42" stroke="url(#g1)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="18" y1="22" x2="40" y2="44" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="62" y1="22" x2="40" y2="44" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="40" cy="38" r="10" stroke="url(#g1)" stroke-width="2.5" fill="none"/>
+        <circle cx="40" cy="38" r="4" fill="url(#g1)"/>
+        <line x1="40" y1="28" x2="40" y2="44" stroke="url(#g1)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">VOXVISION</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#industries" class="nav-link" data-section="industries">Industries</a></li>
+      <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+      <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+      <li><a href="#faq" class="nav-link" data-section="faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">Get Free Consultation</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#industries" class="mobile-link">Industries</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#portfolio" class="mobile-link">Portfolio</a>
+  <a href="#pricing" class="mobile-link">Pricing</a>
+  <a href="#faq" class="mobile-link">FAQ</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#contact" class="btn btn-primary" style="margin-top:16px;justify-content:center;">Get Free Consultation</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home" aria-label="Hero section">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Background Orbs -->
+  <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+  <div class="container hero-centered-container">
+    <!-- Top 3D Ribbon Shape -->
+    <div class="hero-top-shape fade-up stagger-1">
+      <img src="images/wave_3d_glow.png" alt="3D Wave Ribbon" class="hero-3d-wave" />
+    </div>
+
+    <!-- Title -->
+    <h1 class="hero-title fade-up stagger-2">
+      Partner with<br>the <span class="accent">best</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="hero-subtitle centered fade-up stagger-3">
+      Design the future now
+    </p>
+
+    <!-- Bottom Row (Pill Links & Socials) -->
+    <div class="hero-bottom-bar fade-up stagger-4">
+      <a href="tel:+917975882681" class="btn btn-pill-premium">(+91) 79758-82681</a>
+      <a href="mailto:voxvision6@gmail.com" class="btn btn-pill-premium">VOXVISION6@GMAIL.COM</a>
+      <div class="hero-social-circles">
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-circle" aria-label="Facebook">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.9913 5.65684 21.1283 10.4375 21.8785V14.8906H7.89844V12H10.4375V9.79688C10.4375 7.29063 11.9305 5.90625 14.2148 5.90625C15.3086 5.90625 16.4766 6.10156 16.4766 6.10156V8.5625H15.2148C13.9719 8.5625 13.5859 9.33333 13.5859 10.125V12H16.3594L15.9156 14.8906H13.5859V21.8785C18.3432 21.1283 22 16.9913 22 12Z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-circle" aria-label="Instagram">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-indicator-line"></div>
+    <div class="scroll-indicator-dot"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════ MARQUEE ══════════════════════════ -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>Web Development</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Social Media Management</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Google Ads</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Meta Ads</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>SEO Optimization</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>AI Chatbots</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Brand Identity</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>WhatsApp Automation</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>CRM Integration</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Email Marketing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>E-Commerce</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>UI/UX Design</span>
+  </div>
+</div>
+
+<!-- ════════════════════════ STATS ════════════════════════════ -->
+<section class="stats-section" aria-label="Company statistics">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item fade-in stagger-1">
+        <span class="stat-number" data-counter data-target="150" data-suffix="+">0+</span>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item fade-in stagger-2">
+        <span class="stat-number" data-counter data-target="98" data-suffix="%">0%</span>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-item fade-in stagger-3">
+        <span class="stat-number" data-counter data-target="8" data-suffix="+">0+</span>
+        <div class="stat-label">Industries Served</div>
+      </div>
+      <div class="stat-item fade-in stagger-4">
+        <span class="stat-number" data-counter data-target="3" data-suffix="x">0x</span>
+        <div class="stat-label">Avg. Revenue Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INDUSTRIES ════════════════════════ -->
+<section class="section industries" id="industries" aria-label="Industries we serve">
+  <!-- Background orbs -->
+  <div class="section-orb orb-purple" style="width:500px;height:500px;top:-100px;right:-200px;opacity:0.12;" aria-hidden="true"></div>
+  <div class="section-orb orb-blue" style="width:300px;height:300px;bottom:0;left:-100px;opacity:0.1;" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Industries We Serve</div>
+      <h2 class="section-title">Tailored Solutions for <span class="text-gradient">Every Business</span></h2>
+      <p class="section-subtitle">We understand each industry's unique needs and craft specialized digital strategies that drive real results.</p>
+    </div>
+
+    <div class="industries-grid" data-stagger>
+      <a href="pages/gym.html" class="industry-card" id="industry-gym">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+        </span>
+        <div class="industry-name">Gym &amp; Fitness</div>
+        <div class="industry-desc">Membership management, class booking, trainer profiles &amp; more.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/hotel.html" class="industry-card" id="industry-hotel">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V2h20v20"/><path d="M12 2v20"/><path d="M2 12h20"/><path d="M6 6h2"/><path d="M6 16h2"/><path d="M16 6h2"/><path d="M16 16h2"/></svg>
+        </span>
+        <div class="industry-name">Hotels &amp; Resorts</div>
+        <div class="industry-desc">Room booking, online payments, gallery &amp; live availability.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/restaurant.html" class="industry-card" id="industry-restaurant">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v9"/><path d="M12 15v7"/><path d="M18 2v13"/><path d="M18 22v-7"/><path d="M12 15h6"/></svg>
+        </span>
+        <div class="industry-name">Restaurants &amp; Cafes</div>
+        <div class="industry-desc">Table reservation, food ordering, menu &amp; delivery integration.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/pub.html" class="industry-card" id="industry-pub">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l1 15a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4L6 3Z"/><path d="M18 7h2a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-2"/><path d="M6 8h12"/></svg>
+        </span>
+        <div class="industry-name">Pubs &amp; Bars</div>
+        <div class="industry-desc">Table booking, events, DJ nights, gallery &amp; offers.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/law.html" class="industry-card" id="industry-law">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v17"/><path d="M12 5 5 7.5"/><path d="M12 5l7 2.5"/><path d="M5 7.5 3 14h4L5 7.5z"/><path d="M19 7.5L17 14h4l-2-6.5z"/><path d="M2 20h20"/></svg>
+        </span>
+        <div class="industry-name">Law Firms</div>
+        <div class="industry-desc">Appointment booking, lawyer profiles, legal blogs &amp; case inquiry.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/school.html" class="industry-card" id="industry-school">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12.5v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5"/><path d="M21.5 11v6"/></svg>
+        </span>
+        <div class="industry-name">Schools &amp; Education</div>
+        <div class="industry-desc">Admission forms, student portal, fee payment &amp; events.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/hospital.html" class="industry-card" id="industry-hospital">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+        </span>
+        <div class="industry-name">Hospitals &amp; Clinics</div>
+        <div class="industry-desc">Doctor appointments, online consultation &amp; patient portal.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+      <a href="pages/retail.html" class="industry-card" id="industry-retail">
+        <span class="industry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
+        <div class="industry-name">Retail &amp; Local Shops</div>
+        <div class="industry-desc">E-commerce, inventory, online payments &amp; delivery management.</div>
+        <div class="industry-arrow">
+          <svg class="arrow-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SERVICES ══════════════════════════ -->
+<section class="section services" id="services" aria-label="Our services">
+  <div class="section-orb orb-gold" style="width:400px;height:400px;top:50%;left:-150px;transform:translateY(-50%);opacity:0.08;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Everything Your Business <span class="text-gradient">Needs to Grow</span></h2>
+      <p class="section-subtitle">From a stunning website to full-scale digital marketing — we handle it all under one roof.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="services-tabs" role="tablist" aria-label="Service categories">
+      <button class="tab-btn active" data-tab="tab-web" role="tab" id="tab-web-btn" aria-selected="true">Web Development</button>
+      <button class="tab-btn" data-tab="tab-social" role="tab" id="tab-social-btn" aria-selected="false">Social Media</button>
+      <button class="tab-btn" data-tab="tab-marketing" role="tab" id="tab-marketing-btn" aria-selected="false">Digital Marketing</button>
+      <button class="tab-btn" data-tab="tab-branding" role="tab" id="tab-branding-btn" aria-selected="false">Branding &amp; Design</button>
+      <button class="tab-btn" data-tab="tab-automation" role="tab" id="tab-automation-btn" aria-selected="false">AI &amp; Automation</button>
+    </div>
+
+    <!-- Tab: Web Development -->
+    <div class="tab-content active" id="tab-web" role="tabpanel">
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Custom Website Design</div>
+          <ul class="service-list">
+            <li>Unique, premium UI/UX design</li>
+            <li>100% mobile responsive</li>
+            <li>Dark &amp; light mode options</li>
+            <li>Animations &amp; micro-interactions</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">SEO Optimized</div>
+          <ul class="service-list">
+            <li>On-page SEO setup</li>
+            <li>Meta tags &amp; schema markup</li>
+            <li>Google Search Console</li>
+            <li>Core Web Vitals optimization</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Booking &amp; Payment System</div>
+          <ul class="service-list">
+            <li>Online booking integration</li>
+            <li>Payment gateway (Razorpay/Stripe)</li>
+            <li>Appointment scheduling</li>
+            <li>Automated confirmations</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Admin Dashboard</div>
+          <ul class="service-list">
+            <li>Easy CMS to edit content</li>
+            <li>Booking management panel</li>
+            <li>Analytics integration</li>
+            <li>User account management</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Hosting &amp; Maintenance</div>
+          <ul class="service-list">
+            <li>Premium hosting setup</li>
+            <li>SSL certificate included</li>
+            <li>Monthly backups</li>
+            <li>24/7 uptime monitoring</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Analytics &amp; Reporting</div>
+          <ul class="service-list">
+            <li>Google Analytics 4 setup</li>
+            <li>Conversion tracking</li>
+            <li>Monthly performance reports</li>
+            <li>Heatmap &amp; user behavior</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Social Media -->
+    <div class="tab-content" id="tab-social" role="tabpanel">
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Instagram Growth</div>
+          <ul class="service-list">
+            <li>Daily post &amp; reel creation</li>
+            <li>Story designs &amp; highlights</li>
+            <li>Hashtag research strategy</li>
+            <li>Engagement &amp; DM management</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Facebook Management</div>
+          <ul class="service-list">
+            <li>Page optimization</li>
+            <li>Regular content posting</li>
+            <li>Ad campaigns management</li>
+            <li>Community engagement</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">YouTube Editing</div>
+          <ul class="service-list">
+            <li>Professional video editing</li>
+            <li>Thumbnail design</li>
+            <li>SEO-optimized titles &amp; tags</li>
+            <li>Channel growth strategy</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Content Calendar</div>
+          <ul class="service-list">
+            <li>30-day content planning</li>
+            <li>Festival &amp; seasonal content</li>
+            <li>Brand-consistent visuals</li>
+            <li>Approval workflow</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Reel Creation</div>
+          <ul class="service-list">
+            <li>Viral reel scripts</li>
+            <li>Motion graphics</li>
+            <li>Voiceover &amp; captions</li>
+            <li>Trending audio integration</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Monthly Analytics</div>
+          <ul class="service-list">
+            <li>Reach &amp; impression analysis</li>
+            <li>Follower growth tracking</li>
+            <li>Top post insights</li>
+            <li>Competitor benchmarking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Digital Marketing -->
+    <div class="tab-content" id="tab-marketing" role="tabpanel">
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">SEO Services</div>
+          <ul class="service-list">
+            <li>Keyword research &amp; targeting</li>
+            <li>Technical SEO audit</li>
+            <li>Link building strategy</li>
+            <li>Local SEO optimization</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Google Ads</div>
+          <ul class="service-list">
+            <li>Search &amp; display campaigns</li>
+            <li>Shopping ads</li>
+            <li>Bid optimization</li>
+            <li>ROI tracking &amp; reporting</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Meta Ads</div>
+          <ul class="service-list">
+            <li>Facebook &amp; Instagram ads</li>
+            <li>Audience targeting</li>
+            <li>Creative ad design</li>
+            <li>Retargeting campaigns</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Google Business Profile</div>
+          <ul class="service-list">
+            <li>Profile optimization</li>
+            <li>Review management</li>
+            <li>Post updates &amp; offers</li>
+            <li>Local pack ranking</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Email Marketing</div>
+          <ul class="service-list">
+            <li>Campaign design &amp; copywriting</li>
+            <li>Automated drip sequences</li>
+            <li>List segmentation</li>
+            <li>Open rate optimization</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Lead Generation</div>
+          <ul class="service-list">
+            <li>Landing page design</li>
+            <li>Lead magnet creation</li>
+            <li>Form &amp; funnel setup</li>
+            <li>CRM integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Branding -->
+    <div class="tab-content" id="tab-branding" role="tabpanel">
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Logo Design</div>
+          <ul class="service-list">
+            <li>Concept development</li>
+            <li>Multiple variations</li>
+            <li>Vector files (SVG/AI)</li>
+            <li>Favicon &amp; app icon</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Brand Identity</div>
+          <ul class="service-list">
+            <li>Color palette &amp; typography</li>
+            <li>Brand guidelines document</li>
+            <li>Visual style system</li>
+            <li>Brand voice &amp; tone</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Business Collateral</div>
+          <ul class="service-list">
+            <li>Business card design</li>
+            <li>Company profile / brochure</li>
+            <li>Letterhead &amp; email signature</li>
+            <li>Presentation templates</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Social Media Kit</div>
+          <ul class="service-list">
+            <li>Profile &amp; cover designs</li>
+            <li>Post template library</li>
+            <li>Story highlight icons</li>
+            <li>Ad creatives</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Automation -->
+    <div class="tab-content" id="tab-automation" role="tabpanel">
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">AI Chatbot</div>
+          <ul class="service-list">
+            <li>24/7 customer support bot</li>
+            <li>Lead capture automation</li>
+            <li>FAQ auto-response</li>
+            <li>Booking via chatbot</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">WhatsApp Automation</div>
+          <ul class="service-list">
+            <li>Auto-reply setup</li>
+            <li>Broadcast messages</li>
+            <li>Booking confirmations</li>
+            <li>Follow-up sequences</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">CRM Integration</div>
+          <ul class="service-list">
+            <li>Lead pipeline management</li>
+            <li>Contact database</li>
+            <li>Sales tracking</li>
+            <li>Task automation</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Email Automation</div>
+          <ul class="service-list">
+            <li>Welcome email sequences</li>
+            <li>Abandoned cart recovery</li>
+            <li>Birthday &amp; anniversary offers</li>
+            <li>Re-engagement campaigns</li>
+          </ul>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <div class="service-title">Booking Automation</div>
+          <ul class="service-list">
+            <li>Automated reminders</li>
+            <li>Cancellation handling</li>
+            <li>Calendar sync</li>
+            <li>Payment confirmation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WHY VOXVISION ═════════════════════ -->
+<section class="section why" id="why" aria-label="Why choose VOXVISION">
+  <div class="section-orb orb-blue" style="width:600px;height:600px;top:50%;right:-200px;transform:translateY(-50%);opacity:0.08;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why VOXVISION</div>
+      <h2 class="section-title">The Agency That <span class="text-gradient">Delivers Results</span></h2>
+      <p class="section-subtitle">We don't just build websites — we build growth engines that attract customers and generate revenue.</p>
+    </div>
+
+    <div class="why-grid" data-stagger>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Premium Designs</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Business-Focused Strategy</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Affordable Pricing</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Dedicated Support</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Fast Delivery</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Latest Technology</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">SEO Friendly</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Conversion Optimized</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Mobile First</div></div>
+      <div class="why-card"><div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">Scalable Solutions</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PORTFOLIO ══════════════════════════ -->
+<!-- ── BRANDING & DESIGN ── -->
+<section class="section branding-design-showcase" id="branding-design" aria-label="Branding and Design Showcase">
+  <div class="container">
+    <div class="agatho-header">
+      <span class="agatho-sub">STUDIO VOXVISION</span>
+      <div class="agatho-shapes-wrap fade-up">
+        <img src="images/branding_shapes_3d.png" alt="3D Geometric Shapes" class="agatho-3d-shapes" />
+      </div>
+      <h2 class="agatho-title fade-up stagger-1">Branding<br>&amp; <span class="accent">Design</span></h2>
+      <a href="#portfolio" class="agatho-pill-btn fade-up stagger-2">
+        <span>READ MORE</span>
+        <span class="down-arrow-circle">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="agatho-divider"></div>
+
+    <div class="agatho-work-row">
+      <div class="agatho-work-left">
+        <h3 class="agatho-work-title">Our <span class="accent">work</span></h3>
+      </div>
+      <div class="agatho-work-right">
+        <p class="agatho-work-text">
+          Since our founding, VOXVISION has been the go-to agency for premium design and digital experiences in Bengaluru. We boast a diverse local and global client base, setting the standard for branding as our clients collaborate with the highest caliber of creatives and engineers.
+        </p>
+      </div>
+    </div>
+
+    <div class="agatho-images-grid">
+      <div class="agatho-img-card fade-up stagger-1">
+        <img src="images/portfolio_gym.png" alt="Branding laptop mockup" class="agatho-portfolio-img" />
+      </div>
+      <div class="agatho-img-card fade-up stagger-2">
+        <img src="images/portfolio_restaurant.png" alt="Smart watch mockup" class="agatho-portfolio-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section portfolio" id="portfolio" aria-label="Our portfolio">
+  <div class="section-orb orb-purple" style="width:400px;height:400px;bottom:-100px;left:50%;transform:translateX(-50%);opacity:0.1;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Projects That <span class="text-gradient">Speak for Themselves</span></h2>
+      <p class="section-subtitle">A curated selection of websites and digital campaigns we've delivered for our clients.</p>
+    </div>
+
+    <div class="portfolio-filters" role="group" aria-label="Portfolio filters">
+      <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+      <button class="filter-btn" data-filter="gym" id="filter-gym">Gym</button>
+      <button class="filter-btn" data-filter="hotel" id="filter-hotel">Hotel</button>
+      <button class="filter-btn" data-filter="restaurant" id="filter-restaurant">Restaurant</button>
+      <button class="filter-btn" data-filter="school" id="filter-school">School</button>
+      <button class="filter-btn" data-filter="law" id="filter-law">Law Firm</button>
+      <button class="filter-btn" data-filter="healthcare" id="filter-healthcare">Healthcare</button>
+      <button class="filter-btn" data-filter="retail" id="filter-retail">Retail</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Gym -->
+      <div class="portfolio-item fade-up stagger-1" data-category="gym">
+        <div class="portfolio-badge-always">Gym &amp; Fitness</div>
+        <img src="images/portfolio_gym.png" alt="FitZone Premium Gym website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Gym &amp; Fitness</div>
+          <div class="portfolio-title">FitZone Premium Gym</div>
+          <div class="portfolio-actions">
+            <a href="pages/gym.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel -->
+      <div class="portfolio-item fade-up stagger-2" data-category="hotel">
+        <div class="portfolio-badge-always">Hotel &amp; Resort</div>
+        <img src="images/portfolio_hotel.png" alt="The Grand Residency Hotel website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Hotel &amp; Resort</div>
+          <div class="portfolio-title">The Grand Residency</div>
+          <div class="portfolio-actions">
+            <a href="pages/hotel.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant -->
+      <div class="portfolio-item fade-up stagger-3" data-category="restaurant">
+        <div class="portfolio-badge-always">Restaurant &amp; Cafe</div>
+        <img src="images/portfolio_restaurant.png" alt="Flavour Street Kitchen website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Restaurant &amp; Cafe</div>
+          <div class="portfolio-title">Flavour Street Kitchen</div>
+          <div class="portfolio-actions">
+            <a href="pages/restaurant.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Law Firm -->
+      <div class="portfolio-item fade-up stagger-1" data-category="law">
+        <div class="portfolio-badge-always">Law Firm</div>
+        <img src="images/portfolio_law.png" alt="Apex Legal Associates website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Law Firm</div>
+          <div class="portfolio-title">Apex Legal Associates</div>
+          <div class="portfolio-actions">
+            <a href="pages/law.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- School -->
+      <div class="portfolio-item fade-up stagger-2" data-category="school">
+        <div class="portfolio-badge-always">School &amp; Education</div>
+        <img src="images/portfolio_school.png" alt="Horizon Academy website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">School &amp; Education</div>
+          <div class="portfolio-title">Horizon Academy</div>
+          <div class="portfolio-actions">
+            <a href="pages/school.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Healthcare -->
+      <div class="portfolio-item fade-up stagger-3" data-category="healthcare">
+        <div class="portfolio-badge-always">Hospital &amp; Clinic</div>
+        <img src="images/portfolio_healthcare.png" alt="Wellness Care Hospital website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Hospital &amp; Clinic</div>
+          <div class="portfolio-title">Wellness Care Hospital</div>
+          <div class="portfolio-actions">
+            <a href="pages/hospital.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Retail -->
+      <div class="portfolio-item fade-up stagger-1" data-category="retail">
+        <div class="portfolio-badge-always">Retail Shop</div>
+        <img src="images/portfolio_retail.png" alt="StyleNest Boutique website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Retail Shop</div>
+          <div class="portfolio-title">StyleNest Boutique</div>
+          <div class="portfolio-actions">
+            <a href="pages/retail.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub -->
+      <div class="portfolio-item fade-up stagger-2" data-category="pub">
+        <div class="portfolio-badge-always">Pub &amp; Bar</div>
+        <img src="images/portfolio_pub.png" alt="The Barrel House website" class="portfolio-img" loading="lazy" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag">Pub &amp; Bar</div>
+          <div class="portfolio-title">The Barrel House</div>
+          <div class="portfolio-actions">
+            <a href="pages/pub.html" class="btn btn-primary btn-sm">View Details</a>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get Similar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="section testimonials" id="testimonials" aria-label="Client testimonials">
+  <div class="container">
+    <div class="testimonials-header-row">
+      <h2 class="section-title text-left">What our <span class="accent">clients</span> say</h2>
+      <div class="testimonials-visual-wrap">
+        <img src="images/testimonials_ring_3d.png" alt="3D Ring Graphic" class="testimonials-3d-ring" />
+      </div>
+    </div>
+
+    <div class="testimonials-premium-grid">
+      <!-- 1 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"VOXVISION transformed our gym's online presence completely. Our membership inquiries tripled within the first month of launching the new website. Absolutely outstanding work!"</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Rahul <span class="bold-last">Sharma</span></div>
+          <div class="author-role">Owner, FitZone Gym</div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"The restaurant booking system they built is seamless. We get 40+ online reservations daily now. Their social media management also grew our Instagram from 500 to 8,000 followers!"</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Priya <span class="bold-last">Menon</span></div>
+          <div class="author-role">Director, Spice Route Restaurant</div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"Professional, fast, and the end result was beyond our expectations. Our hotel's online bookings increased by 220% after launching the new website. Best investment we made."</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Arjun <span class="bold-last">Nair</span></div>
+          <div class="author-role">GM, The Serene Retreat Hotel</div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"The AI chatbot they integrated handles 80% of our patient appointment queries automatically. It saved us hours every day. Their team is incredibly responsive and professional."</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Deepa <span class="bold-last">Krishnan</span></div>
+          <div class="author-role">Medical Director, Wellness Care Clinic</div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"VOXVISION built us a complete e-commerce store in just 2 weeks. Our online sales now account for 60% of total revenue. Their Google Ads campaign delivers consistent ROI every month."</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Sunil <span class="bold-last">Patel</span></div>
+          <div class="author-role">Founder, StyleNest Boutique</div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="testimonial-card-premium">
+        <p class="testimonial-body">"The case inquiry system they built with automated follow-up is seamless. We never miss a potential client now. The website design conveys the premium quality that matches our legal services."</p>
+        <div class="testimonial-author-premium">
+          <div class="author-name">Kiran <span class="bold-last">Joshi</span></div>
+          <div class="author-role">Partner, Corporate Legal Advisors</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ PRICING ══════════════════════════ -->
+<section class="section pricing" id="pricing" aria-label="Pricing plans">
+  <div class="section-orb orb-gold" style="width:500px;height:500px;top:-100px;right:-100px;opacity:0.06;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Transparent Pricing</div>
+      <h2 class="section-title">Simple, <span class="text-gradient">Honest Pricing</span></h2>
+      <p class="section-subtitle">No hidden fees. Choose the plan that fits your business goals and budget.</p>
+    </div>
+
+    <div class="pricing-toggle" role="group" aria-label="Pricing category">
+      <button class="pricing-toggle-btn active" data-pricing="pricing-web" id="pricing-web-btn">Website Development</button>
+      <button class="pricing-toggle-btn" data-pricing="pricing-social" id="pricing-social-btn">Social Media</button>
+    </div>
+
+    <!-- Website Pricing -->
+    <div class="pricing-plans active" id="pricing-web">
+      <div class="pricing-card fade-up stagger-1">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">14,999</span>
+        </div>
+        <div class="pricing-period">One-time setup</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>5-page responsive website</li>
+          <li><span class="check">✓</span>Mobile optimized design</li>
+          <li><span class="check">✓</span>Basic SEO setup</li>
+          <li><span class="check">✓</span>Contact form integration</li>
+          <li><span class="check">✓</span>Google Maps embed</li>
+          <li><span class="check">✓</span>WhatsApp chat button</li>
+          <li><span class="check">✓</span>1 month free support</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;" id="pricing-starter-web-cta">Get Started</a>
+      </div>
+
+      <div class="pricing-card featured fade-up stagger-2">
+        <div class="pricing-badge">⚡ Most Popular</div>
+        <div class="pricing-tier">Professional</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">29,999</span>
+        </div>
+        <div class="pricing-period">One-time setup</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to 15 pages website</li>
+          <li><span class="check">✓</span>Booking &amp; payment system</li>
+          <li><span class="check">✓</span>Advanced SEO optimization</li>
+          <li><span class="check">✓</span>Admin dashboard</li>
+          <li><span class="check">✓</span>Google Analytics setup</li>
+          <li><span class="check">✓</span>WhatsApp automation</li>
+          <li><span class="check">✓</span>3 months free support</li>
+          <li><span class="check">✓</span>Speed optimization</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;" id="pricing-pro-web-cta">Get Started</a>
+      </div>
+
+      <div class="pricing-card fade-up stagger-3">
+        <div class="pricing-tier">Enterprise</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">59,999</span>
+        </div>
+        <div class="pricing-period">One-time setup</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Unlimited pages</li>
+          <li><span class="check">✓</span>Full e-commerce store</li>
+          <li><span class="check">✓</span>CRM integration</li>
+          <li><span class="check">✓</span>AI chatbot</li>
+          <li><span class="check">✓</span>Email automation</li>
+          <li><span class="check">✓</span>Custom integrations</li>
+          <li><span class="check">✓</span>6 months free support</li>
+          <li><span class="check">✓</span>Priority hosting</li>
+          <li><span class="check">✓</span>Monthly analytics report</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;" id="pricing-enterprise-web-cta">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Social Media Pricing -->
+    <div class="pricing-plans" id="pricing-social">
+      <div class="pricing-card fade-up stagger-1">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">8,999</span>
+        </div>
+        <div class="pricing-period">per month</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Instagram management</li>
+          <li><span class="check">✓</span>12 posts per month</li>
+          <li><span class="check">✓</span>4 reels per month</li>
+          <li><span class="check">✓</span>Hashtag research</li>
+          <li><span class="check">✓</span>Monthly analytics report</li>
+          <li><span class="check">✓</span>Caption writing</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;" id="pricing-starter-social-cta">Get Started</a>
+      </div>
+
+      <div class="pricing-card featured fade-up stagger-2">
+        <div class="pricing-badge">⚡ Most Popular</div>
+        <div class="pricing-tier">Growth</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">17,999</span>
+        </div>
+        <div class="pricing-period">per month</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Instagram + Facebook</li>
+          <li><span class="check">✓</span>24 posts per month</li>
+          <li><span class="check">✓</span>8 reels per month</li>
+          <li><span class="check">✓</span>Story designs (daily)</li>
+          <li><span class="check">✓</span>Community management</li>
+          <li><span class="check">✓</span>Brand strategy</li>
+          <li><span class="check">✓</span>Monthly analytics report</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;" id="pricing-growth-social-cta">Get Started</a>
+      </div>
+
+      <div class="pricing-card fade-up stagger-3">
+        <div class="pricing-tier">Premium</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">₹</span><span class="pricing-amount">34,999</span>
+        </div>
+        <div class="pricing-period">per month</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>All platforms managed</li>
+          <li><span class="check">✓</span>Unlimited posts</li>
+          <li><span class="check">✓</span>YouTube editing</li>
+          <li><span class="check">✓</span>Paid ad campaigns</li>
+          <li><span class="check">✓</span>Influencer outreach</li>
+          <li><span class="check">✓</span>Monthly video production</li>
+          <li><span class="check">✓</span>Dedicated account manager</li>
+          <li><span class="check">✓</span>Competitor benchmarking</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;" id="pricing-premium-social-cta">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════ CTA BANNER ══════════════════════ -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="cta-banner-bg" aria-hidden="true">
+    <img src="images/cta_visual.png" alt="" class="cta-banner-img" loading="lazy" />
+  </div>
+  <div class="container">
+    <div class="section-label fade-in" style="margin:0 auto 24px;">Ready to Grow?</div>
+    <h2 class="cta-title fade-up">Ready to <span class="text-gradient">Dominate Your Market?</span></h2>
+    <p class="cta-subtitle fade-up stagger-1">Let's build your digital empire together. Free consultation — no commitment.</p>
+    <div class="cta-buttons fade-up stagger-2">
+      <a href="#contact" class="btn btn-primary btn-lg" id="cta-banner-primary">
+        Get Free Consultation
+        <span class="btn-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/917975882681" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" id="cta-banner-whatsapp">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ FAQ ══════════════════════════════ -->
+<!-- ── CALCULATOR SECTION ── -->
+<section class="section calculator-section" id="quote-calculator" aria-label="Interactive Quote Calculator">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Interactive Quote</div>
+      <h2 class="section-title">Instant <span class="text-gradient">Pricing Calculator</span></h2>
+      <p class="section-subtitle">Customize your service package and get an instant price estimation. Book directly on WhatsApp!</p>
+    </div>
+
+    <div class="calculator-card">
+      <div class="calc-grid">
+        <!-- Left: Options -->
+        <div class="calc-options">
+          <div class="calc-group">
+            <label class="calc-label">1. Choose Your Industry</label>
+            <div class="industry-selector-grid">
+              <div class="ind-pill-btn active" data-industry="Gym &amp; Fitness">Gym &amp; Fitness</div>
+              <div class="ind-pill-btn" data-industry="Hotel &amp; Resort">Hotel &amp; Resort</div>
+              <div class="ind-pill-btn" data-industry="Restaurant &amp; Cafe">Restaurant &amp; Cafe</div>
+              <div class="ind-pill-btn" data-industry="Pub &amp; Bar">Pub &amp; Bar</div>
+              <div class="ind-pill-btn" data-industry="Law Firm">Law Firm</div>
+              <div class="ind-pill-btn" data-industry="School &amp; Education">School &amp; Education</div>
+              <div class="ind-pill-btn" data-industry="Hospital &amp; Clinic">Hospital &amp; Clinic</div>
+              <div class="ind-pill-btn" data-industry="Retail Shop">Retail Shop</div>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">2. Select Website Package</label>
+            <div class="package-selector-grid">
+              <div class="pkg-card active" data-type="web" data-price="29999" data-name="Professional Web (Rs. 29,999)">
+                <div class="pkg-title">Professional</div>
+                <div class="pkg-desc">Up to 15 pages, Booking, Payment, SEO</div>
+                <div class="pkg-price">Rs. 29,999</div>
+              </div>
+              <div class="pkg-card" data-type="web" data-price="14999" data-name="Starter Web (Rs. 14,999)">
+                <div class="pkg-title">Starter</div>
+                <div class="pkg-desc">5 pages, responsive, basic SEO</div>
+                <div class="pkg-price">Rs. 14,999</div>
+              </div>
+              <div class="pkg-card" data-type="web" data-price="59999" data-name="Enterprise Web (Rs. 59,999)">
+                <div class="pkg-title">Enterprise</div>
+                <div class="pkg-desc">Unlimited pages, E-Commerce, Chatbot, CRM</div>
+                <div class="pkg-price">Rs. 59,999</div>
+              </div>
+              <div class="pkg-card" data-type="web" data-price="0" data-name="No Website">
+                <div class="pkg-title">None</div>
+                <div class="pkg-desc">I already have a website</div>
+                <div class="pkg-price">Rs. 0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">3. Select Social Media Package</label>
+            <div class="package-selector-grid">
+              <div class="pkg-card" data-type="social" data-price="17999" data-name="Growth Social (Rs. 17,999/mo)">
+                <div class="pkg-title">Growth</div>
+                <div class="pkg-desc">Insta + FB, 24 posts, 8 reels, daily stories</div>
+                <div class="pkg-price">Rs. 17,999/mo</div>
+              </div>
+              <div class="pkg-card" data-type="social" data-price="8999" data-name="Starter Social (Rs. 8,999/mo)">
+                <div class="pkg-title">Starter</div>
+                <div class="pkg-desc">Instagram, 12 posts, 4 reels, analytics</div>
+                <div class="pkg-price">Rs. 8,999/mo</div>
+              </div>
+              <div class="pkg-card" data-type="social" data-price="34999" data-name="Premium Social (Rs. 34,999/mo)">
+                <div class="pkg-title">Premium</div>
+                <div class="pkg-desc">All platforms, Ads management, videos</div>
+                <div class="pkg-price">Rs. 34,999/mo</div>
+              </div>
+              <div class="pkg-card active" data-type="social" data-price="0" data-name="No Social Media">
+                <div class="pkg-title">None</div>
+                <div class="pkg-desc">No social media management needed</div>
+                <div class="pkg-price">Rs. 0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">4. Add-Ons</label>
+            <div class="addons-grid">
+              <label class="addon-card">
+                <input type="checkbox" class="addon-checkbox" data-price="9999" data-name="SEO Optimization Add-on (Rs. 9,999)" />
+                <div class="addon-content">
+                  <div class="addon-title">SEO Campaign (Rs. 9,999)</div>
+                  <div class="addon-desc">High intent ranking for your local keywords</div>
+                </div>
+              </label>
+              <label class="addon-card">
+                <input type="checkbox" class="addon-checkbox" data-price="12999" data-name="AI Chatbot Add-on (Rs. 12,999)" />
+                <div class="addon-content">
+                  <div class="addon-title">AI Chatbot Integration (Rs. 12,999)</div>
+                  <div class="addon-desc">24/7 automated leads &amp; support assistant</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Invoice & Summary -->
+        <div class="calc-summary-wrapper">
+          <div class="calc-summary-card">
+            <h3 class="summary-title">Estimate Summary</h3>
+            <div class="summary-divider"></div>
+            
+            <div class="summary-items" id="calc-summary-items">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="price-row">
+              <span>One-Time Cost:</span>
+              <span class="price-val" id="ot-price">Rs. 29,999</span>
+            </div>
+            <div class="price-row">
+              <span>Monthly Maintenance:</span>
+              <span class="price-val" id="mo-price">Rs. 0</span>
+            </div>
+
+            <button class="btn btn-primary btn-lg calc-cta" id="calc-book-btn">
+              Order via WhatsApp <span class="btn-arrow">&#x2192;</span>
+            </button>
+            <p class="calc-disclaimer">Instant configuration. Chat directly with our director to finalize order details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+      <p class="section-subtitle">Got questions? We've got answers. If you don't see yours here, just ask us.</p>
+    </div>
+
+    <div class="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q1" aria-expanded="false">
+          How long does it take to build a website?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q1">
+          <div class="faq-answer-inner">Typically 7–14 working days for a standard website, and 3–6 weeks for complex builds with booking systems, e-commerce, or custom features. We always provide a clear timeline before we begin.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q2" aria-expanded="false">
+          Do you provide hosting and domain registration?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q2">
+          <div class="faq-answer-inner">Yes! We offer hosting setup and domain registration as part of our packages. We work with premium hosting providers to ensure your website is fast, secure, and always online.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q3" aria-expanded="false">
+          Can you redesign my existing website?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q3">
+          <div class="faq-answer-inner">Absolutely! Website redesigns are one of our specialties. We'll audit your current site, identify what's holding it back, and build a modern, high-converting replacement while preserving your SEO history.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q4" aria-expanded="false">
+          Do you manage Instagram and other social media?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q4">
+          <div class="faq-answer-inner">Yes, we offer complete social media management for Instagram, Facebook, YouTube, and LinkedIn. This includes content creation, posting, community management, analytics reports, and paid advertising.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q5" aria-expanded="false">
+          Can I accept online payments through my website?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q5">
+          <div class="faq-answer-inner">Yes! We integrate payment gateways like Razorpay, PayU, and Stripe. Whether it's for bookings, products, memberships, or services — we'll set up a smooth, secure payment experience.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q6" aria-expanded="false">
+          Do you provide SEO services?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q6">
+          <div class="faq-answer-inner">Yes! All our websites include basic SEO setup. We also offer comprehensive SEO packages including keyword research, content optimization, link building, Google Business Profile optimization, and monthly ranking reports.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q7" aria-expanded="false">
+          Can you manage Google and Meta Ad campaigns?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q7">
+          <div class="faq-answer-inner">Absolutely! We create, manage, and optimize Google Search, Display, YouTube, Facebook, and Instagram ad campaigns. We focus on maximizing your ROI with data-driven targeting and creative strategy.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-question" id="faq-q8" aria-expanded="false">
+          What industries do you specialize in?
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q8">
+          <div class="faq-answer-inner">We have deep expertise in Gyms, Hotels, Restaurants, Pubs &amp; Bars, Law Firms, Schools, Hospitals &amp; Clinics, and Retail Shops. Each industry gets a customized strategy tailored to its specific customer journey and goals.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ CONTACT ══════════════════════════ -->
+<section class="section contact" id="contact" aria-label="Contact us">
+  <div class="section-orb orb-purple" style="width:400px;height:400px;top:0;right:-100px;opacity:0.1;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Let's Talk</div>
+      <h2 class="section-title">Let's Build Something <span class="text-gradient">Amazing Together</span></h2>
+      <p class="section-subtitle">Get your free consultation today — no obligation, no hard sell. Just a real conversation about your business.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="slide-left">
+        <h3 class="contact-info-title">Get in Touch with <span class="text-gradient">VOXVISION</span></h3>
+        <p class="contact-info-desc">We typically respond within 2 hours. WhatsApp us for the fastest response!</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Phone / WhatsApp</div>
+              <div class="contact-detail-value">+91 79758 82681 &nbsp;|&nbsp; +91 96080 80911</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">voxvision6@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail-value">AECS Layout, Bengaluru, Karnataka, India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4920!2d77.6408!3d12.9856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1153921e3f91%3A0x1234!2sAECS+Layout%2C+Bengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="220" style="border:0;display:block;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="VOXVISION office location">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="slide-right">
+        <div class="contact-form">
+          <h3 class="form-title">Request Free Consultation</h3>
+          <p class="form-subtitle">Fill in your details and we'll get back to you within 24 hours.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="field-name">Your Name *</label>
+                <input type="text" id="field-name" class="form-input" placeholder="John Doe" data-required data-validate="text" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-biz">Business Name *</label>
+                <input type="text" id="field-biz" class="form-input" placeholder="Your Business" data-required data-validate="text" autocomplete="organization" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-industry">Industry *</label>
+                <select id="field-industry" class="form-select" data-required>
+                  <option value="">Select Industry</option>
+                  <option value="Gym &amp; Fitness">Gym &amp; Fitness</option>
+                  <option value="Hotel &amp; Resort">Hotel &amp; Resort</option>
+                  <option value="Restaurant &amp; Cafe">Restaurant &amp; Cafe</option>
+                  <option value="Pub &amp; Bar">Pub &amp; Bar</option>
+                  <option value="Law Firm">Law Firm</option>
+                  <option value="School &amp; Education">School &amp; Education</option>
+                  <option value="Hospital &amp; Clinic">Hospital &amp; Clinic</option>
+                  <option value="Retail Shop">Retail Shop</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-phone">Phone Number *</label>
+                <input type="tel" id="field-phone" class="form-input" placeholder="+91 98765 43210" data-required data-validate="phone" autocomplete="tel" />
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="field-email">Email Address *</label>
+                <input type="email" id="field-email" class="form-input" placeholder="you@example.com" data-required data-validate="email" autocomplete="email" />
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="field-message">Message</label>
+                <textarea id="field-message" class="form-textarea" placeholder="Tell us about your project, goals, or any questions you have..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg form-submit" id="form-submit-btn">
+              Request Free Consultation <span class="btn-arrow">↗</span>
+            </button>
+
+            <div id="form-success" role="alert" aria-live="polite"></div>
+            <div id="form-error" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════ FOOTER ══════════════════════════ -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand footer-col">
+        <a href="index.html" class="nav-logo" aria-label="VOXVISION Home">
+          <svg class="logo-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#9b59ff"/>
+                <stop offset="50%" stop-color="#22d3ee"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+            <polygon points="40,4 62,22 74,10 74,42 40,76 6,42 6,10 18,22" fill="url(#g2)" opacity="0.15"/>
+            <polyline points="18,22 6,10 6,42" stroke="url(#g2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <polyline points="62,22 74,10 74,42" stroke="url(#g2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <polyline points="6,42 40,76 74,42" stroke="url(#g2)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="38" r="10" stroke="url(#g2)" stroke-width="2.5" fill="none"/>
+            <circle cx="40" cy="38" r="4" fill="url(#g2)"/>
+          </svg>
+          <span class="logo-text">VOXVISION</span>
+        </a>
+        <p class="footer-desc">We build businesses that dominate online. Premium websites, powerful social media, and full digital marketing — all under one roof.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/Voxvi.sion" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📸</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">👍</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://wa.me/917975882681" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#industries" class="footer-link">Industries</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+          <li><a href="#pricing" class="footer-link">Pricing</a></li>
+          <li><a href="#faq" class="footer-link">FAQ</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Industries -->
+      <div class="footer-col">
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="pages/gym.html" class="footer-link">Gym &amp; Fitness</a></li>
+          <li><a href="pages/hotel.html" class="footer-link">Hotels &amp; Resorts</a></li>
+          <li><a href="pages/restaurant.html" class="footer-link">Restaurants &amp; Cafes</a></li>
+          <li><a href="pages/pub.html" class="footer-link">Pubs &amp; Bars</a></li>
+          <li><a href="pages/law.html" class="footer-link">Law Firms</a></li>
+          <li><a href="pages/school.html" class="footer-link">Schools &amp; Education</a></li>
+          <li><a href="pages/hospital.html" class="footer-link">Hospitals &amp; Clinics</a></li>
+          <li><a href="pages/retail.html" class="footer-link">Retail Shops</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:+917975882681" class="footer-link">📞 +91 79758 82681</a></li>
+          <li><a href="tel:+919608080911" class="footer-link">📞 +91 96080 80911</a></li>
+          <li><a href="mailto:voxvision6@gmail.com" class="footer-link">📧 voxvision6@gmail.com</a></li>
+          <li><span class="footer-link" style="cursor:default;">📍 AECS Layout, Bengaluru</span></li>
+          <li style="margin-top:16px;"><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-link">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <p class="footer-copy">© 2026 VOXVISION. All Rights Reserved. Built with ❤️ in Bengaluru.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════ WHATSAPP FAB ═════════════════════════ -->
+<a
+  href="https://wa.me/917975882681?text=Hello%20VOXVISION!%20I%20want%20to%20discuss%20a%20project."
+  target="_blank" rel="noopener"
+  class="whatsapp-fab"
+  id="whatsapp-fab"
+  aria-label="Chat with us on WhatsApp"
+>
+  <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>
