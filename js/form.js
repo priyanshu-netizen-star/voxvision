@@ -80,49 +80,10 @@
     });
   });
 
-  // Form submit — send to email via FormSubmit.co
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    if (!validate()) return;
-
-    // Loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
-
-    const name     = form.querySelector('#field-name').value.trim();
-    const biz      = form.querySelector('#field-biz').value.trim();
-    const industry = form.querySelector('#field-industry').value;
-    const phone    = form.querySelector('#field-phone').value.trim();
-    const email    = form.querySelector('#field-email').value.trim();
-    const message  = form.querySelector('#field-message').value.trim();
-
-    fetch("https://formsubmit.co/ajax/voxvision6@gmail.com", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        _subject: "New Free Consultation Request — VOXVISION",
-        Name: name,
-        Business: biz,
-        Industry: industry,
-        Phone: phone,
-        Email: email,
-        _replyto: email,
-        Message: message
-      })
-    })
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error("Failed to send email");
-      }
-    })
-    .then(data => {
-      // Show success
+  // Check on page load if redirected back with success query parameter
+  window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
       if (successMsg) {
         successMsg.style.display = 'flex';
         successMsg.style.cssText = `
@@ -133,37 +94,36 @@
         `;
         successMsg.innerHTML = `<span style="font-size:20px;">✅</span> <span>Thank you! We've received your request and will contact you within 24 hours.</span>`;
       }
-      if (errorMsg) errorMsg.innerHTML = '';
 
-      form.reset();
+      // Scroll to contact section
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        setTimeout(() => {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      }
 
-      // Reset button
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = `Request Free Consultation <span class="btn-arrow">→</span>`;
+      // Clear the query parameter so refreshing doesn't show it again
+      const newUrl = window.location.pathname + window.location.hash;
+      window.history.replaceState({}, document.title, newUrl);
 
-      // Hide success msg after 6s
+      // Hide success message after 10 seconds
       setTimeout(() => {
         if (successMsg) successMsg.innerHTML = '';
-      }, 6000);
-    })
-    .catch(error => {
-      console.error(error);
-      if (errorMsg) {
-        errorMsg.style.display = 'flex';
-        errorMsg.style.cssText = `
-          display: flex; align-items: center; gap: 12px;
-          background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3);
-          border-radius: 12px; padding: 16px 20px;
-          color: #F87171; font-size: 14px; margin-top: 16px;
-        `;
-        errorMsg.innerHTML = `<span style="font-size:20px;">❌</span> <span>Error sending request. Please check connection or contact us via WhatsApp.</span>`;
-      }
-      if (successMsg) successMsg.innerHTML = '';
+      }, 10000);
+    }
+  });
 
-      // Reset button
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = `Request Free Consultation <span class="btn-arrow">→</span>`;
-    });
+  // Form submit — validate only, let standard POST handle the server transmission
+  form.addEventListener('submit', function (e) {
+    if (!validate()) {
+      e.preventDefault();
+      return;
+    }
+
+    // Since it's submitting normally, show a temporary loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner"></span> Redirecting...';
   });
 
 })();

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -1374,19 +1374,25 @@
           <h3 class="form-title">Request Free Consultation</h3>
           <p class="form-subtitle">Fill in your details and we'll get back to you within 24 hours.</p>
 
-          <form id="contact-form" novalidate>
+          <form id="contact-form" action="https://formsubmit.co/voxvision6@gmail.com" method="POST" novalidate>
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_next" value="https://www.voxvision.site?success=true#contact">
+            <input type="hidden" name="_subject" value="New Free Consultation Request — VOXVISION">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            
             <div class="form-grid">
               <div class="form-group">
                 <label class="form-label" for="field-name">Your Name *</label>
-                <input type="text" id="field-name" class="form-input" placeholder="John Doe" data-required data-validate="text" autocomplete="name" />
+                <input type="text" id="field-name" name="name" class="form-input" placeholder="John Doe" data-required data-validate="text" autocomplete="name" />
               </div>
               <div class="form-group">
                 <label class="form-label" for="field-biz">Business Name *</label>
-                <input type="text" id="field-biz" class="form-input" placeholder="Your Business" data-required data-validate="text" autocomplete="organization" />
+                <input type="text" id="field-biz" name="business" class="form-input" placeholder="Your Business" data-required data-validate="text" autocomplete="organization" />
               </div>
               <div class="form-group">
                 <label class="form-label" for="field-industry">Industry *</label>
-                <select id="field-industry" class="form-select" data-required>
+                <select id="field-industry" name="industry" class="form-select" data-required>
                   <option value="">Select Industry</option>
                   <option value="Gym &amp; Fitness">Gym &amp; Fitness</option>
                   <option value="Hotel &amp; Resort">Hotel &amp; Resort</option>
@@ -1401,15 +1407,15 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="field-phone">Phone Number *</label>
-                <input type="tel" id="field-phone" class="form-input" placeholder="+91 98765 43210" data-required data-validate="phone" autocomplete="tel" />
+                <input type="tel" id="field-phone" name="phone" class="form-input" placeholder="+91 98765 43210" data-required data-validate="phone" autocomplete="tel" />
               </div>
               <div class="form-group full">
                 <label class="form-label" for="field-email">Email Address *</label>
-                <input type="email" id="field-email" class="form-input" placeholder="you@example.com" data-required data-validate="email" autocomplete="email" />
+                <input type="email" id="field-email" name="email" class="form-input" placeholder="you@example.com" data-required data-validate="email" autocomplete="email" />
               </div>
               <div class="form-group full">
                 <label class="form-label" for="field-message">Message</label>
-                <textarea id="field-message" class="form-textarea" placeholder="Tell us about your project, goals, or any questions you have..."></textarea>
+                <textarea id="field-message" name="message" class="form-textarea" placeholder="Tell us about your project, goals, or any questions you have..."></textarea>
               </div>
             </div>
 
